@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+.navbar_mainpage {
+  background-color: #f3f3f3;
+  height: 100px;
+}
+.logo img {
+  width: 120px;
+  text-align: center;
+  margin-left: -17px;
+  margin-top: -5px;
+  position: absolute;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 5px 20px;
+  border-radius: 50%;
+  /* border: 2px solid; */
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+}
+.addmaterial_heading {
+  text-align: center;
+  font-family: "Lato";
+  font-size: 32px;
+  margin-top: 50px;
+}
+.adding_notes_info {
+  /* border:1px solid; */
+  margin: 20px 300px;
+  padding: 50px 0px;
+  border-radius: 20px;
+  background-color: #e6d6f0;
+}
+.input_course_field {
+  /* text-align:  ; */
+  height: 50px;
+  width: 80%;
+  padding: 10px;
+  margin-left: 10%;
+  background-color: #f3f3f3;
+  margin-top: 20px;
+  border: 0px solid;
+}
+.input_title_field {
+  text-align: left;
+  height: 30px;
+  width: 78.5%;
+  padding: 10px;
+  margin-left: 10%;
+  background-color: #f3f3f3;
+  margin-top: 20px;
+  border: 0px solid;
+}
+.input_submit_field {
+  /* text-align: center; */
+  height: 50px;
+  width: 10%;
+  padding: 10px;
+  margin-left: 45%;
+  background-color: #cd8ff1;
+  margin-top: 20px;
+  border: 0px solid;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Lato";
+}
+.warning {
+  text-align: center;
+  color:red;
+}

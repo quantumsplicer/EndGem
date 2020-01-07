@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f4f5;
+}
+.navbar_mainpage {
+  background-color: #e6e9eb;
+  height: 100px;
+}
+.logo img {
+  width: 120px;
+  text-align: center;
+  margin-left: -17px;
+  margin-top: -5px;
+  position: absolute;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 5px 20px;
+  border-radius: 50%;
+  /* border: 2px solid; */
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.courselist {
+  display: flex;
+  width: 44vw;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #896ee9;
+  align-self: flex-end;
+  margin-left: 29vw;
+  position: absolute;
+  margin-top: 50px;
+  border-radius: 4px;
+  /* border: 1px solid; */
+}
+.course {
+  font-family: "Lato";
+  font-size: 20px;
+  color: white;
+  width: 200px;
+  text-align: center;
+  font-weight: 100;
+}
+.add_plus_logo {
+  height: 100px;
+  width: 100px;
+  margin-left: 87vw;
+  position: absolute;
+}
+.add_3bar {
+  height: 100px;
+  width: 100px;
+  margin-left: 92vw;
+  font-size: 10px;
+}
+.single_bar {
+  position: relative;
+  background-color: #ffffff;
+  width: 50%;
+  height: 10%;
+  left: 25%;
+  top: 25%;
+  background-color: #c0c0c0;
+}
+.horizontal-plus {
+  position: relative;
+  background-color: #ffffff;
+  width: 50%;
+  height: 12.5%;
+  left: 25%;
+  top: 43.75%;
+  background-color: #c0c0c0;
+}
+.vertical-plus {
+  position: relative;
+  background-color: #ffffff;
+  width: 12.5%;
+  height: 50%;
+  left: 43.75%;
+  top: 12.5%;
+  background-color: #c0c0c0;
+}
+.all_notes_displayed {
+  margin: 100px 10vw;
+}
+.display_notes {
+  display: flex;
+  margin-top: 0px;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid #d6d6d6;
+  /* box-shadow: 2px 5px 50px ; */
+  border-radius: 4px;
+  /* font-weight: 100; */
+  color: #666;
+}
+.display_notes img {
+  width: 30px;
+  padding: 15px;
+}
+.notes_name {
+  font-family: "Lato";
+  font-size: 19px;
+  text-align: left;
+  /* border: 1px solid; */
+  line-height: 30px;
+  width: 70%;
+}
+.nod_display {
+  text-align: right;
+  width: 40%;
+  /* border: 1px solid; */
+  margin-left: 2%;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 100px;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: flex;
+  transition: 0.3s;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+  align-items: center;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/* .sidebar_singlenote {
+  display: flex;
+} */
+.sidebar_singlenote_image_container{
+  background-color: grey;
+  width: 50px; 
+  height: 50px;
+  border-radius: 50% 
+}
+.sidebar_singlenote_image{
+  margin: 7px 14px ;
+}
