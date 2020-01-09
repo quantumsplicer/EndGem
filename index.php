@@ -78,8 +78,7 @@
     <div class="all_notes_displayed">
 
     <?php foreach($all_notes as $notes_1){ ?>  
-    
-    <div class="display_notes">
+    <a download="<?php echo htmlspecialchars($notes_1["actual_name"])?>" href="uploads/<?php echo htmlspecialchars($notes_1["actual_name"])?>"><div class="display_notes">
         <img src="assets/pdf.svg" />
         <div class="notes_name">
           
@@ -89,7 +88,7 @@
         </div>
         <div class="nod_display">No. of Downloads: <?php echo htmlspecialchars($notes_1['no_of_downloads']) ?></div>
       </div>
-
+    </a>
       <?php } ?>
     </div>
   </body>
