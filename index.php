@@ -1,9 +1,7 @@
 <?php 
   //connect to database
-  $conn = mysqli_connect('localhost', 'maanav', 'manuthebest', 'img_project' );
-  if (!$conn){
-      echo "error bro: " . mysqli_connect_error();
-  }
+  include('connect_db.php');
+
   $sql='SELECT * FROM notes';
   $result = mysqli_query($conn , $sql);
   $all_notes = mysqli_fetch_all($result ,MYSQLI_ASSOC);
@@ -31,17 +29,16 @@
   </head>
   <body>
   <div id="mySidebar" class="sidebar">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
     <?php foreach($all_notes1 as $notes_1) { ?>
   <div class="sidebar_singlenote">
-    <a href="#">
+    <a href="#" style="width:500px">
       <div class="sidebar_singlenote_image_container">
       <img src="./assets/Vector.png" class="sidebar_singlenote_image"/>
       </div>
       <div class="sidebar_singlenote_title" style="padding-left: 10px">
         <?php echo htmlspecialchars($notes_1['title']); ?>
       </div>
-      <div class="sidebar_singlenote_downloads" style="text-align: right; width:300px">
+      <div class="sidebar_singlenote_downloads" style="display:flex; justify-content:flex-end">
         <?php echo htmlspecialchars($notes_1['no_of_downloads']); ?>
         Downloads
       </div>
@@ -49,7 +46,7 @@
   </div>
   <?php } ?>
 </div>
-    <div class="logo"><img src="./assets/notes.png" /></div>
+    <a href="index.php"><div class="logo"><img src="./assets/notes.png" /></div></a>
     <div class="navbar_mainpage">
       <div class="courselist">
         <div class="course">
@@ -65,15 +62,16 @@
           Course 4
         </div>
       </div>
-      <div class="add_plus_logo">
+      <a href="add.php"><div class="add_plus_logo">
         <div class='horizontal-plus'></div>
         <div class='vertical-plus'></div>
-      </div>
-      <div class="add_3bar" onclick="openNav()">
+      </div></a>
+      <a href="#"><div class="add_3bar" onclick="openNav()">
         <div class="single_bar"></div><br>
         <div class="single_bar"></div><br>
         <div class="single_bar"></div>
       </div>
+    </a>
     </div>
     <div class="all_notes_displayed">
 

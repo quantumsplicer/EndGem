@@ -91,6 +91,9 @@ body {
 .all_notes_displayed {
   margin: 100px 10vw;
 }
+a{
+  text-decoration:none;
+}
 .display_notes {
   display: flex;
   margin-top: 0px;
