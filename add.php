@@ -21,7 +21,7 @@
       }else{
         echo "ERROR: " .mysqli_error($conn);
       }
-  }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +29,8 @@
   <head>
     <title>Add your notes!</title>
     <link rel="stylesheet" type="text/css" href="./add.css" />
+    <script type="text/javascript" src="./index.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
   <body>
   <a href="index.php"><div class="logo"><img src="./assets/notes.png" /></div></a>
@@ -45,8 +47,9 @@
         </select>
         <input type="text" class="input_title_field" name="title" placeholder="Title for your notes"/><br> 
         <label for="input_upload_field" class="input_upload_decoration" >
+          click for uploading material then click upload (name of material uploaded will be hidden for security reasons)
           </label> 
-          <input type="file" id="input_upload_field" name="file"/><br>
+          <input type="file" id="input_upload_field" name="file" onchange="myfunc()" placeholder=""/><br>
         <?php 
           if(isset($_POST["upload"]))
           {

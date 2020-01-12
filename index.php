@@ -34,14 +34,17 @@
     <a href="#" style="width:500px">
       <div class="sidebar_singlenote_image_container">
       <img src="./assets/Vector.png" class="sidebar_singlenote_image"/>
+      
       </div>
-      <div class="sidebar_singlenote_title" style="padding-left: 10px">
+      <div class="sidebar_singlenote_content">
+      <div class="sidebar_singlenote_title" >
         <?php echo htmlspecialchars($notes_1['title']); ?>
-      </div>
-      <div class="sidebar_singlenote_downloads" style="display:flex; justify-content:flex-end">
+    </div>
+      <div class="sidebar_singlenote_downloads">
         <?php echo htmlspecialchars($notes_1['no_of_downloads']); ?>
         Downloads
       </div>
+    </div>
     </a>
   </div>
   <?php } ?>
@@ -49,18 +52,18 @@
     <a href="index.php"><div class="logo"><img src="./assets/notes.png" /></div></a>
     <div class="navbar_mainpage">
       <div class="courselist">
-        <div class="course">
+        <a class="course" href="course1.php">
           Course 1
-        </div>
-        <div class="course">
+    </a>
+        <a class="course" href="course2.php">
           Course 2
-        </div>
-        <div class="course">
+    </a>
+        <a class="course" href="course3.php">
           Course 3
-        </div>
-        <div class="course">
+    </a>
+        <a class="course" href="course4.php">
           Course 4
-        </div>
+    </a>
       </div>
       <a href="add.php"><div class="add_plus_logo">
         <div class='horizontal-plus'></div>

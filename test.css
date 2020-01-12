@@ -161,9 +161,13 @@ a{
   font-size: 36px;
   margin-left: 50px;
 }
-/* .sidebar_singlenote {
+.sidebar_singlenote_content {
   display: flex;
-} */
+  justify-content: flex-end;
+  max-width: 400px;
+  width: 400px;
+
+}
 .sidebar_singlenote_image_container{
   background-color: grey;
   width: 50px; 
@@ -172,4 +176,10 @@ a{
 }
 .sidebar_singlenote_image{
   margin: 7px 14px ;
+}
+.sidebar_singlenote_title{
+  width:250px;
+  
+  display:flex;
+  justify-content: flex-start;
 }

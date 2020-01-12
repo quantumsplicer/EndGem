@@ -59,11 +59,10 @@ body {
   margin-top: 20px;
   border: 0px solid;
 }
-#input_upload_field{
-  
-  display:none;
+#input_upload_field {
+  display: none;
 }
-.input_upload_decoration{
+.input_upload_decoration {
   text-align: left;
   height: 30px;
   width: 78.5%;
@@ -72,7 +71,8 @@ body {
   background-color: #f3f3f3;
   margin-top: 20px;
   border: 0px solid;
-  display:block
+  display: block;
+  color: #777777;
 }
 .input_submit_field {
   /* text-align: center; */
@@ -89,5 +89,5 @@ body {
 }
 .warning {
   text-align: center;
-  color:red;
+  color: red;
 }
